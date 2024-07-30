@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Tienda de Insumos Médicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        .container {
+            padding: 2em;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 2em;
+        }
+        .button {
+            padding: 0.5em 2em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</h:head>
+<h:body>
+    <header>
+        <h1>Bienvenido a la Tienda de Insumos Médicos</h1>
+    </header>
+    <div class="container">
+        <p>En nuestra tienda encontrarás una amplia variedad de insumos médicos de alta calidad para satisfacer todas tus necesidades.</p>
+        <p>Ofrecemos productos como guantes, mascarillas, jeringas, equipos médicos, y mucho más.</p>
+        <div class="button-container">
+            <h:form>
+                <h:commandButton value="Ver API" action="api-info.xhtml" styleClass="button"/>
+            </h:form>
+        </div>
+    </div>
+</h:body>
+</html>
